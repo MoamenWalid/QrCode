@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qr Code</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="text">QrCode App</div>
+
+  <div class="parent">
+    <div class="in-qr">
+      <label for="in">qrCode:</label>
+      <input id="in" class="input-qr" type="text" placeholder="Enter Your Link">
+    </div>
+    <div class="size-qr">
+      <label for="size">Size:</label>
+      <select name="size" id="size">
+        <option value="100">100x100</option>
+        <option value="200" selected>200x200</option>
+        <option value="300">300x300</option>
+        <option value="400">400x400</option>
+        <option value="500">500x500</option>
+      </select>
+    </div>
+    <button class="make-qr">Make QrCode</button>
+  </div>
+  <div id="qrcode"></div>
+  <a href="">Download QrCode</a>
+  <!-- Script QrCode -->
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+  <!-- Main File JS -->
+  <script src="main.js"></script>
+</body>
+</html>
